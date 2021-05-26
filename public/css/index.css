@@ -1,0 +1,112 @@
+@import url("./reset.css");
+@import url("./index.css");
+
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button {
+    background: #007eff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: inherit;
+    color: #fff;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056d9;
+    border-color: #0051cc;
+}
+
+.global-wrapper {
+    min-height: 100vh;
+    background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#eae6ff));
+    background: linear-gradient(0deg, #fff, #eae6ff 100%);
+    padding-bottom: 50px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 68px;
+    padding: 15px;
+}
+
+#logo {
+    height: 100%;
+    padding: 3px;
+}
+
+.header > a, .header > a > button {
+    height: 100%;
+    border-radius: .2rem;
+}
+
+.header > a {
+    padding-right: 16px;
+}
+
+.header > a > button {
+    font-size: 17px;
+    padding: 3px 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body__intro {
+    max-width: 40%;
+    min-width: 400px;
+}
+
+#textView--big {
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+#textView--normal {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.35;
+}
+
+#signup-button {
+    margin-top: 40px;
+    padding: 8px 24px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#body__imageView {
+    width: 445px;
+    margin-left: 100px;
+}
+
+footer {
+    margin-top: 150px !important;
+    /* background: #FAFBFC; */
+    /* background: #CFD2F5; */
+    text-align: center;
+}
+
+footer::after {
+    content: "";
+    margin-top: 200px;
+}
+
+footer > div {
+    margin-top: 15px;
+}
